@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#17130f" />
+  <meta name="description" content="Hào Khí Việt Nam — những nhân vật lịch sử tôn quý của dân tộc." />
+  <title>Hào Khí Việt Nam — Những Bậc Tôn Quý</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <main class="shell">
+    <section class="hero-art" id="heroArt" aria-label="Hình ảnh chủ đề lịch sử">
+      <div class="art-glow"></div>
+      <div class="sun"></div>
+      <div class="mountain mountain-back"></div>
+      <div class="mountain mountain-front"></div>
+      <div class="flag-pole"></div>
+      <div class="flag">
+        <span class="flag-star">★</span>
+      </div>
+      <div class="seal">VN</div>
+      <div class="art-caption">
+        <span>HÀO KHÍ</span>
+        <strong>VIỆT NAM</strong>
+        <small>Những bậc tôn quý của dân tộc</small>
+      </div>
+      <div class="art-index"><span id="artIndex">01</span><i></i><span>05</span></div>
+    </section>
+
+    <section class="content">
+      <header class="header">
+        <div class="eyebrow">HISTORICAL PORTRAITS / VIET NAM</div>
+        <h1>Những Bậc<br><span>Tôn Quý</span></h1>
+        <p class="intro">Một không gian kể chuyện về những con người đã để lại dấu ấn sâu đậm trong lịch sử Việt Nam — nơi ký ức, hào khí và âm thanh gặp nhau.</p>
+        <div class="meta-row">
+          <div><span>CHỦ ĐỀ</span><b>Hào khí dân tộc</b></div>
+          <div><span>THỜI KỲ</span><b>Thế kỷ XI — XX</b></div>
+        </div>
+      </header>
+
+      <div class="divider"></div>
+      <div class="list" id="characterList"></div>
+
+      <footer class="footer">
+        <span>Powered by <b>Hào Khí Việt Nam</b></span>
+        <span class="footer-note">Di sản · Ký ức · Tự hào</span>
+      </footer>
+    </section>
+  </main>
+
+  <button class="music-control" id="musicButton" aria-label="Bật hoặc tắt nhạc">
+    <span class="music-orbit"></span>
+    <span class="music-bars"><i></i><i></i><i></i><i></i></span>
+  </button>
+  <div class="music-label" id="musicLabel">SOUNDS OF VIETNAM · OFF</div>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="music/sounds-of-vietnam.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
